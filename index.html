@@ -1,0 +1,253 @@
+<html>
+ <head>
+  <title>
+   Final Project Idea - Responsive News Portal
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+     <img alt="Company logo with blue and white colors, modern style" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/b13692e6-6655-4430-3caa-cc840963d4a8.jpg" width="50"/>
+     <h1 class="text-2xl font-bold text-gray-800">
+      Global News Hub
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-gray-700 font-semibold">
+     <a class="hover:text-blue-600 transition" href="#">
+      Home
+     </a>
+     <a class="hover:text-blue-600 transition" href="#">
+      World
+     </a>
+     <a class="hover:text-blue-600 transition" href="#">
+      Technology
+     </a>
+     <a class="hover:text-blue-600 transition" href="#">
+      Business
+     </a>
+     <a class="hover:text-blue-600 transition" href="#">
+      Entertainment
+     </a>
+     <a class="hover:text-blue-600 transition" href="#">
+      Sports
+     </a>
+     <a class="hover:text-blue-600 transition" href="#">
+      Contact
+     </a>
+    </nav>
+    <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     Home
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     World
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     Technology
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     Business
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     Entertainment
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     Sports
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-gray-100" href="#">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main class="container mx-auto px-4 py-8 flex-grow">
+   <section class="mb-12">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+     Top Stories
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Breaking news image showing a busy city street with people and cars during sunset" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e97c8df3-1cec-4d37-b390-2c8f1c8afeff.jpg" width="600"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        Global Summit on Climate Change Concludes with New Agreements
+       </h3>
+       <p class="text-gray-700 flex-grow">
+        World leaders have agreed on new measures to reduce carbon emissions and invest in renewable energy sources to combat climate change.
+       </p>
+       <a class="mt-4 text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="High-tech laboratory with scientists working on futuristic devices and robots" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/aeb21702-d306-411c-61a1-988b844c126a.jpg" width="600"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        Breakthrough in AI Technology Promises Smarter Automation
+       </h3>
+       <p class="text-gray-700 flex-grow">
+        A new AI model has been developed that can learn and adapt faster than previous versions, opening doors to advanced automation in various industries.
+       </p>
+       <a class="mt-4 text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Excited crowd cheering in a large stadium during a major international soccer match" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/9850d6f7-6fc9-4258-8e1c-f541d00511bc.jpg" width="600"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        International Soccer Championship Ends in Thrilling Final
+       </h3>
+       <p class="text-gray-700 flex-grow">
+        The championship match kept fans on the edge of their seats with a last-minute goal securing the victory for the underdog team.
+       </p>
+       <a class="mt-4 text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="mb-12">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+     Latest News
+    </h2>
+    <div class="space-y-6">
+     <article class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden">
+      <img alt="Modern office building with glass facade reflecting the sky and cityscape" class="w-full md:w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/9d5b0857-9092-4c4c-fd11-a88c87ab3328.jpg" width="300"/>
+      <div class="p-4 flex flex-col justify-between">
+       <h3 class="text-lg font-semibold mb-2">
+        Stock Markets Rally After Positive Economic Reports
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Investors reacted positively to the latest economic data, pushing stock prices higher across multiple sectors.
+       </p>
+       <a class="text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden">
+      <img alt="Red carpet event with celebrities posing for photographers under bright lights" class="w-full md:w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/28f50eb8-4dde-4cb5-62a1-ceead060479a.jpg" width="300"/>
+      <div class="p-4 flex flex-col justify-between">
+       <h3 class="text-lg font-semibold mb-2">
+        New Blockbuster Movie Breaks Box Office Records
+       </h3>
+       <p class="text-gray-700 mb-4">
+        The latest release from a popular director has shattered opening weekend records worldwide.
+       </p>
+       <a class="text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden">
+      <img alt="Doctor consulting with patient in a bright and modern medical clinic" class="w-full md:w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/87a46c13-b18a-4915-5072-f792c442ba26.jpg" width="300"/>
+      <div class="p-4 flex flex-col justify-between">
+       <h3 class="text-lg font-semibold mb-2">
+        New Advances in Medical Research Offer Hope for Rare Diseases
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Scientists have developed promising treatments that could improve outcomes for patients with rare conditions.
+       </p>
+       <a class="text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden">
+      <img alt="Scenic tropical beach with turquoise water and palm trees under a clear blue sky" class="w-full md:w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/d8e9ebd9-4f49-41ba-259f-5c47f0f47944.jpg" width="300"/>
+      <div class="p-4 flex flex-col justify-between">
+       <h3 class="text-lg font-semibold mb-2">
+        Top Travel Destinations to Visit This Summer
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Explore the best places to relax and enjoy your vacation with family and friends this year.
+       </p>
+       <a class="text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden">
+      <img alt="Students studying together in a modern university library with laptops and books" class="w-full md:w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/6ac61f33-8745-4014-38b5-c56b07e96796.jpg" width="300"/>
+      <div class="p-4 flex flex-col justify-between">
+       <h3 class="text-lg font-semibold mb-2">
+        Innovative Education Programs Launch to Support Remote Learning
+       </h3>
+       <p class="text-gray-700 mb-4">
+        New initiatives aim to improve access and quality of education for students learning from home.
+       </p>
+       <a class="text-blue-600 font-semibold hover:underline" href="#">
+        Read more
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section>
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+     Subscribe to Our Newsletter
+    </h2>
+    <form class="max-w-md bg-white p-6 rounded-lg shadow-md">
+     <label class="block text-gray-700 font-semibold mb-2" for="email">
+      Email Address
+     </label>
+     <input class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     <button class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition" type="submit">
+      Subscribe
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 mt-12">
+   <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+    <p>
+     © 2024 Global News Hub. All rights reserved.
+    </p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-blue-600" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-blue-400" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-pink-600" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-blue-700" href="#">
+      <i class="fab fa-linkedin fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
